@@ -1,0 +1,70 @@
+Script started on 2021-09-22 19:36:44-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;jesse@jesse-VirtualBox: ~[01;32mjesse@jesse-VirtualBox[00m:[01;34m~[00m$ g++ URLparser.cpp -[Ko- URLCompile
+[01m[Kg++:[m[K [01;31m[Kerror: [m[Ko-: No such file or directory
+[01m[Kg++:[m[K [01;31m[Kerror: [m[KURLCompile: No such file or directory
+]0;jesse@jesse-VirtualBox: ~[01;32mjesse@jesse-VirtualBox[00m:[01;34m~[00m$ g++ URLparser.cpp o- URLCompile[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kg++ URLparser.cpp o- URLCompile[C[1P[1P[1@ [Co URLCompile[C URLCompile
+]0;jesse@jesse-VirtualBox: ~[01;32mjesse@jesse-VirtualBox[00m:[01;34m~[00m$ bash parserExecute[Kable
+Please enter a valid url: https://youtube.co          www.youtube.com
+
+Protocol: 	https
+Domain: 	www.youtube.com
+Port:		None
+File path:	None
+Parameters:	None
+]0;jesse@jesse-VirtualBox: ~[01;32mjesse@jesse-VirtualBox[00m:[01;34m~[00m$ bash parserExecutable
+Please enter a valid url: httpz://youtube       www.youtube.com
+
+Invalid URL with following erroneous components: 
+Protocol:	httpz is not a valid protocol.
+
+]0;jesse@jesse-VirtualBox: ~[01;32mjesse@jesse-VirtualBox[00m:[01;34m~[00m$ ht[K[Kbash parserExecutable
+Please enter a valid url: http: / :/www.youtube.com
+
+Invalid URL with following erroneous components: 
+Protocol:	Missing ://
+Unable to continue
+]0;jesse@jesse-VirtualBox: ~[01;32mjesse@jesse-VirtualBox[00m:[01;34m~[00m$ bash parserExecutable
+Please enter a valid url: https://cs.uitd   tdallas.edu:80/directory/faculty/people.html?name- =Bob
+
+Protocol: 	https
+Domain: 	cs.utdallas.edu
+Port:		80
+File path:	/directory/faculty/people.html
+Parameters:	name=Bob
+]0;jesse@jesse-VirtualBox: ~[01;32mjesse@jesse-VirtualBox[00m:[01;34m~[00m$ httpq[K[K[K[K[Kabc://youtube[K[K[K[K[K[K[Kfirefox.e[Knexus/[K:8000[K[K[K[K900000/people.html
+bash: abc://firefox.nexus:900000/people.html: No such file or directory
+]0;jesse@jesse-VirtualBox: ~[01;32mjesse@jesse-VirtualBox[00m:[01;34m~[00m$ abc://firefox.nexus:900000/people.html[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[17Pbash parserExecutable
+Please enter a valid url: abc://firefox.nesus:0--   900000/people.html
+
+Invalid URL with following erroneous components: 
+Protocol:	abc is not a valid protocol.
+Domain:		Too many or too little domain arguments
+Port:		port number must be between 1 and 65535
+
+]0;jesse@jesse-VirtualBox: ~[01;32mjesse@jesse-VirtualBox[00m:[01;34m~[00m$ bash parserExecutable
+Please enter a valid url: ab  https://firefo      www.fi irefox.net   completions:70  12930123901            /pei ople      computer. ?name=bob
+
+Invalid URL with following erroneous components: 
+Domain:		completions is an invalid domain name.
+Path		Missing .html or htm at the end of path
+
+]0;jesse@jesse-VirtualBox: ~[01;32mjesse@jesse-VirtualBox[00m:[01;34m~[00m$ bash parserExecutable
+Please enter a valid url: https://www.firefox.ed  com/ :70  50/computerArehhard to   .htmp l
+
+Protocol: 	https
+Domain: 	www.firefox.com
+Port:		50
+File path:	/computerArehhard.html
+Parameters:	None
+]0;jesse@jesse-VirtualBox: ~[01;32mjesse@jesse-VirtualBox[00m:[01;34m~[00m$ bash parserExecutableabc://firefox.nexus:900000/people.html[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[17Pbash parserExecutable
+Please enter a valid url: hh ttps://I.love. CS.eud  du/Ireallydon'tlike=       tlikecs.html?Love=false
+
+Protocol: 	https
+Domain: 	I.loveCS.edu
+Port:		None
+File path:	/Ireallydontlikecs.html
+Parameters:	Love=false
+]0;jesse@jesse-VirtualBox: ~[01;32mjesse@jesse-VirtualBox[00m:[01;34m~[00m$ exit
+exit
+
+Script done on 2021-09-22 19:43:15-05:00 [COMMAND_EXIT_CODE="0"]
